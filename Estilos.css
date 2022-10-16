@@ -1,0 +1,218 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.imagen_logo{
+    border: 2px solid red;
+    border-radius: 30px;
+    height: 150px;
+}
+
+header{
+    background-color: brown;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+}
+
+.contenedor-menu{
+    background-color: aqua;
+    height: 30px;
+    border: 1px solid black;
+}
+
+.menu1{
+    text-decoration: none;
+    color: black;
+    padding:  0 10px;
+    
+}
+
+.menu1:hover{
+    color: red;
+    background-color: white;
+}
+
+.carrusel{
+    background-color:blue;
+    height:300px;
+}
+
+.sugerencias{
+    background-color:yellow;
+    height:300px;
+}
+
+.nav_footer{
+    background-color: black;
+    color:white;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.titulo{
+    display: inline;
+}
+
+
+
+.menu2{
+    text-decoration: none;
+    color: white;
+    padding:  0 30px;
+    
+}
+
+.menu2:hover{
+    color: red;
+    background-color: white;
+}
+
+
+h3{
+    color: black
+}
+
+.subtitulos{
+    color: grey;
+}
+
+.contenedor{
+    /*ESTO VA EN EL CONTENEDOR, PARA PODER POSICIONAR LOS ELEMENTOS HIJOS*/
+    /*REEMPLAZA AL FLOAT: LEFT*/
+    display: flex;
+    /*FLEX-DIRECTION     LOS POSICIONA, LOS ORDENADA, EN FILAS, COLUMNAS*/
+
+    padding: 10px;
+    text-align: center;
+    border: 3px solid brown;
+
+    /*HACE QUE EL ELEMENTO OCUPO EL 100 % DEL ANCHO DEL ESPACIO*/
+    /*RESPETA EL ANCHO QUE YO LE DOY, Y NO SE HACE FLEXIBLE*/
+    /*POR DEFECTO VIENE EN NOWRAP*/
+
+    flex-wrap: wrap;
+
+    align-content: flex-end;
+
+    /*JUSTIFY-CONTENT : PARA TIRARLOS A LA DERECHA, A LA IZQUIERDA, ESPACIARLOS O CENTRARLOS.*/
+    /*ALIGN-ITEMS: LOS POSICIONA EN FORMA VERTICAL*/
+
+    /*ALIGN-CONTENT: Posiciona vertical cuando hay mas de dos lineas de elementos*/
+
+
+    /*FLEX-GROW: 1; cuando sobra espacio , los elementos abarcan el 100 % del contenedor*/
+
+    /*FLEX-Shrink: 0; Para restringir el ancho minimo */
+
+    /*    flex: 1 1 auto;*/
+
+    /*ORDER: 1 Le doy prioridad en el orden de posicionamiento*/
+
+    /*ALIGN-SELF: FLEX-START      POSICIONA LOS ELEMENTOS DE MANERA INDIVIDUAL*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+}
+
+
+
+.productos{
+    background-color: wheat;
+    color: rgb(160, 117, 117);
+    border: 2px solid red;
+    margin: 5px auto;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 8px 8px 4px gainsboro;
+    width: 90%;
+
+
+    /*PARA QUE DENTRO DEL ANCHO INCLUYA LO OCUPADO POR EL BORDE*/
+    box-sizing: border-box;
+}
+
+.nombre-producto{
+    color: rgb(110, 110, 121);
+}
+
+
+.btn-ver{
+    width: 90%;
+    background-color: rgb(69, 13, 173);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px auto 0px;
+}
+
+.fotos-productos{
+    width: 70%;
+    margin-top: 10px;
+}
+
+
+
+
+
+
+
+@media (min-width: 0px) and (max-width: 479px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+    }
+    .nav_footer{
+        flex-direction: column;
+        height: auto;
+    }
+}
+    
+
+@media (min-width: 480px) and (max-width: 720px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .nav_footer{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 721px) and (max-width: 1200px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    header{
+        flex-direction: column;
+    }
+    .nav_footer{
+        flex-direction: column;
+        height: auto;
+    }
+} 
+
+@media (min-width: 1201px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        width: 100%;
+    }
+} 
