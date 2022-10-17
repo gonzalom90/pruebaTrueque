@@ -73,7 +73,7 @@ header{
 }
 
 .menu2:hover{
-    color: red;
+    color: rgb(221, 191, 21);
     background-color: white;
 }
 
@@ -129,7 +129,7 @@ h3{
 .productos{
     background-color: wheat;
     color: rgb(160, 117, 117);
-    border: 2px solid red;
+    border: 2px solid rgb(101, 5, 5);
     margin: 5px auto;
     padding: 10px;
     border-radius: 5px;
@@ -148,7 +148,7 @@ h3{
 
 .btn-ver{
     width: 90%;
-    background-color: rgb(69, 13, 173);
+    background-color: rgb(57, 42, 84);
     color: white;
     border-radius: 5px;
     padding: 5px 10px;
